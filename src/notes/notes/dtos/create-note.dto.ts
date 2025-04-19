@@ -1,5 +1,4 @@
 import { IsNotEmpty, IsOptional, IsString } from 'class-validator';
-import { INoteDto } from './note.dto';
 
 export interface ICreateNoteDto {
   title: string;
