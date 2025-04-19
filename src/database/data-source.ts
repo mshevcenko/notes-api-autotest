@@ -10,8 +10,8 @@ export default new DataSource({
   username: process.env.DB_USERNAME || 'user',
   password: process.env.DB_PASSWORD || 'password',
   database: process.env.DB_DATABASE || 'notes',
-  entities: ['dist/**/*.entity{.js,.ts}', 'src/**/*.entity.ts'],
-  migrations: ['dist/migrations/**/*.js', 'src/migrations/**/*.ts'],
+  entities: ['dist/**/*.entity{.js,.ts}'],
+  migrations: ['dist/migrations/**/*.js'],
   migrationsTableName: 'migrations',
   migrationsRun: true,
 });
